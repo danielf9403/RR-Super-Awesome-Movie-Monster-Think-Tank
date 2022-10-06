@@ -8,14 +8,16 @@ function App() {
   const Packages = React.lazy(() => import('./components/Packages'))
 
 
-  return (
+return (
     <div className="App">
-      <h1>Lonzo's Travel Agency</h1>
-      <h2>Make your travel dreams come true</h2>
-      <div className="contents">
-        <Suspense fallback={<Loader type="Bars" color="#FF00FF	" height={200} width={200} style={{margin: "0 auto"}}/>}>
-          <AboutUs />
-          <Packages />
+      <div>
+        <Suspense fallback={<Loader 
+            type="Bars" 
+            color="#FF00FF" 
+            height={200} 
+            width={200} 
+            style={{margin: "0 auto"}}/>}>
+          <h1>Hello World</h1>
         </Suspense>
       </div>
     </div>
